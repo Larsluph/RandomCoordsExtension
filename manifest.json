@@ -1,0 +1,15 @@
+{
+  "name": "Random Location Extension",
+  "description": "Opens a Gmaps tab with a random location within the specified range of coordinates",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title: "Pick random location"
+  }
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
