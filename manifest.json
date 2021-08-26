@@ -1,7 +1,7 @@
 {
   "name": "Random Location Picker",
   "description": "Opens a Gmaps tab with a random location within the specified range of coordinates",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 3,
 
   "permissions": [

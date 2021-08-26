@@ -7,8 +7,8 @@ function openRandom() {
   chrome.storage.sync.get({
     user_minlat: 42.3,
     user_maxlat: 51.2,
-    user_minlong: -5,
-    user_maxlong: 8
+    user_minlong: -5.0,
+    user_maxlong: 8.0
   }, function(items) {
     lat = randdouble(items.user_minlat, items.user_maxlat);
     long = randdouble(items.user_minlong, items.user_maxlong);

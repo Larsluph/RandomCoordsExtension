@@ -1,8 +1,8 @@
 function save_settings() {
-  var minlat = parseInt(document.getElementById('minlat').value);
-  var maxlat = parseInt(document.getElementById('maxlat').value);
-  var minlong = parseInt(document.getElementById('minlong').value);
-  var maxlong = parseInt(document.getElementById('maxlong').value);
+  var minlat = parseFloat(document.getElementById('minlat').value);
+  var maxlat = parseFloat(document.getElementById('maxlat').value);
+  var minlong = parseFloat(document.getElementById('minlong').value);
+  var maxlong = parseFloat(document.getElementById('maxlong').value);
 
   chrome.storage.sync.set({
     user_minlat: minlat,
@@ -22,8 +22,8 @@ function init() {
   chrome.storage.sync.get({
     user_minlat: 42.3,
     user_maxlat: 51.2,
-    user_minlong: -5,
-    user_maxlong: 8
+    user_minlong: -5.0,
+    user_maxlong: 8.0
   }, function(items) {
     document.getElementById('minlat').value = items.user_minlat.toString();
     document.getElementById('maxlat').value = items.user_maxlat.toString();
